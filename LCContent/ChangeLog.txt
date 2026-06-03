@@ -1,0 +1,238 @@
+--------------------------------------------------------------------------------------------------------------------------------------------
+TAG v03-02-00
+--------------------------------------------------------------------------------------------------------------------------------------------
+Add support for modern cmake build.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+TAG v03-01-08
+--------------------------------------------------------------------------------------------------------------------------------------------
+Address C++20 -Wparentheses issue.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+TAG v03-01-07
+--------------------------------------------------------------------------------------------------------------------------------------------
+Update cmake settings.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+TAG v03-01-06
+--------------------------------------------------------------------------------------------------------------------------------------------
+Update to resolve compile issue when using -Wint-in-bool-context.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+TAG v03-01-05
+--------------------------------------------------------------------------------------------------------------------------------------------
+Update to use new CI configuration.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+TAG v03-01-04
+--------------------------------------------------------------------------------------------------------------------------------------------
+Minor updates relating to Coverity CI configuration.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+TAG v03-01-03
+--------------------------------------------------------------------------------------------------------------------------------------------
+PhotonReconstructionAlgorithm: Removed printout from status code macro
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+TAG v03-01-02
+--------------------------------------------------------------------------------------------------------------------------------------------
+Use CartesianVector::GetDistanceSquared in ClusterHelper and FragmentRemovalHelper.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+TAG v03-01-01
+--------------------------------------------------------------------------------------------------------------------------------------------
+Externalise the setting of parameters used in the software compensation plugin. 
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+TAG v03-01-00
+--------------------------------------------------------------------------------------------------------------------------------------------
+Added LCTrack implementation to store multiple track states.
+LCPersistency: implemented LCEventReading and LCEventWriting algorithms
+ClusterHelper::GetTrackClusterDistance: templated function to accept a Track, TrackState or TrackStateVector
+Created cheating particle ID algorithm.
+Added extra variables to SoftwareCompensation tree to account for CleanClusters logic when training software compensation.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+TAG v03-00-04
+--------------------------------------------------------------------------------------------------------------------------------------------
+Selected license: GPLv3.
+Added TravisCI builds, Coverity scan and badges.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+TAG v03-00-03
+--------------------------------------------------------------------------------------------------------------------------------------------
+Place factory implementation inside library to avoid algorithm exposure to client applications.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+TAG v03-00-02
+--------------------------------------------------------------------------------------------------------------------------------------------
+Protect against empty target cluster list in MuonClusterAssociationAlgorithm.
+Change the implicit use of current cluster list to explicit use of target cluster list in MuonClusterAssociationAlgorithm.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+TAG v03-00-01
+--------------------------------------------------------------------------------------------------------------------------------------------
+Improved exception handling in photon splitting algorithm.
+Improved exception handling during fragmentation processes.
+Improved exception handling in longitudinal shower profile calculation.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+TAG v03-00-00
+--------------------------------------------------------------------------------------------------------------------------------------------
+Updated to reflect sdk interface changes.
+Updated to reflect change to managed container and Pandora typedefs.
+Enforced object uniqueness in lists where it was previously implicit by use of std::unordered_set.
+Reviewed all unordered containers used by algorithms.
+Provided improved functionality in SortingHelper.
+Deleted PhotonReconstruction algorithm histograms upon algorithm destruction.
+LCContentFast subsumed into wider LCContent library (some significant changes to ConeClusteringFast, MainFragmentRemovalFat not included).
+CMake: No longer any option to proceed without support for specified cxx flags.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+TAG v02-04-01
+--------------------------------------------------------------------------------------------------------------------------------------------
+Applied a configurable cluster energy limit above which software compensation is not used.
+Modified reading of software compensation weights and bin positions so that they are replaced instead of appended to default values.
+Correction regarding last bin value of energy densities used in software compensation.
+Refinement of the software compensation algorithm.
+Update header file installation command.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+TAG v02-04-00
+--------------------------------------------------------------------------------------------------------------------------------------------
+Added software compensation energy correction plugin class.
+Added algorithm for training software compensation.
+Optimised default parameters in clean clusters energy correction plugin.
+Changed Shower Profile Calculation in PhotonFragmentMergingBaseAlgorithm from Inclusive mode to Exclusive mode.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+TAG v02-03-00
+--------------------------------------------------------------------------------------------------------------------------------------------
+Update to reflect interface change for detector gaps.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+TAG v02-02-01
+--------------------------------------------------------------------------------------------------------------------------------------------
+Remove some unnecessary function calls.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+TAG v02-02-00
+--------------------------------------------------------------------------------------------------------------------------------------------
+Improved photon reconstruction, with better shower-separation and shower fragment removal.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+TAG v02-01-00
+--------------------------------------------------------------------------------------------------------------------------------------------
+Improvements to CMake build mechanics.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+TAG v02-00-01
+--------------------------------------------------------------------------------------------------------------------------------------------
+Enabled use of KD-tree findNearestNeighbour functionality.
+Improved error handling in LCShowerProfile plugin and some cosmetic modifications.
+Altered likelihood histogram bin lookup in photon reconstruction algorithm.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+TAG v02-00-00
+--------------------------------------------------------------------------------------------------------------------------------------------
+Update for PandoraSDK breaking change: Cached helix fit no longer available from track object.
+Fixed CXX_FLAGS for clang linker on APPLE
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+TAG v01-01-00
+--------------------------------------------------------------------------------------------------------------------------------------------
+Added photon fragment merging/removal algorithms.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+TAG v01-00-01
+--------------------------------------------------------------------------------------------------------------------------------------------
+Improve specification of CMAKE_CXX_FLAGS.
+Handle cases where c++11 is not available.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+TAG v01-00-00
+--------------------------------------------------------------------------------------------------------------------------------------------
+Milestone v01 release.
+Update to reflect recent changes to PandoraSDK.
+Improved const-correctness. Algorithms are now only exposed to pointers to const managed-objects. Access to managed-object non-const functionality is now only via Pandora APIs.
+Support c++11 (and 98/03, with reduced functionality).
+Added LCContentFast, containing faster versions of algorithms in the LCContent library, using e.g. KD-trees and relying on c++11.
+Added KD-tree and QuickUnion implementations.
+Added ClusterComparison algorithm.
+Address issues highlighted by coverity.
+Makefile and CMakeLists overhaul.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+TAG v00-17
+--------------------------------------------------------------------------------------------------------------------------------------------
+Rename FineGranularityContent to LCContent.
+Update to reflect recent changes to PandoraSDK.
+Overhaul, with emphasis on ensuring that client applications can instantiate and use multiple concurrent pandora instances.
+Address issues highlighted by Coverity.
+Improved member variable initialization, with a default constructor for each algorithm.
+Make list names and current list management properties mandatory - they must be specified in the xml file.
+Move some Helper classes from PandoraSDK into LCContent. No Helper classes (and indeed no Pandora classes) have any configurable static member variables.
+Move some re-usable plugins from MarlinPandora into LCContent.
+Make use of improved monitoring functionality.
+Add to lc_content namespace.
+Alter compiler warning flags, including all, extra, pedantic and shadow declarations to Makefile. Report warnings as errors.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+TAG v00-16
+--------------------------------------------------------------------------------------------------------------------------------------------
+Update to reflect changes to PandoraContentApi.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+TAG v00-15
+--------------------------------------------------------------------------------------------------------------------------------------------
+Update to reflect recent changes to PandoraSDK and PandoraMonitoring.
+The ifndef statements in header files are now fully qualified.
+Update PFO energy and mass following Particle ID.
+Enable Vertex visualization via VisualMonitoring algorithm.
+Improve estimate of photon momentum in PerfectParticleFlow algorithm.
+Remove some unused algorithms.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+TAG v00-14
+--------------------------------------------------------------------------------------------------------------------------------------------
+Specify pfo vertex positions.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+TAG v00-13
+--------------------------------------------------------------------------------------------------------------------------------------------
+Update to reflect recent changes to mc particle handling in PandoraSDK.
+Update PerfectParticleFlow algorithm so that it can make use of new functionality, associating multiple mc particles with individual calo hits.
+Update PerfectClustering algorithm so that it can make use of new functionality, associating multiple mc particles with individual calo hits.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+TAG v00-12
+--------------------------------------------------------------------------------------------------------------------------------------------
+Added first version of MC-cheating PerfectParticleFlow algorithm.
+Reorganized "cheating" fragment removal algorithms.
+Allowed correct isolated hit assignment when running a combination of standard and MC cheating algorithms.
+Ensured local include directory is first in include path.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+TAG v00-11
+--------------------------------------------------------------------------------------------------------------------------------------------
+RESTRUCTURING
+Up to v00-11, the FineGranularityContent library was part of the PandoraPFANew parent package.
+PandoraPFANew is now a "metadata" package containing only Makefiles for downloading and building relevant Pandora libraries.
+The FineGranularityContent library is now maintained and released separately.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+GENERAL INFO:
+Pandora consists of the PandoraSDK (Software Development Kit), which comprises a single library and header files with flexible APIs.
+There is also an optional PandoraMonitoring library, which contains event display and tree/histogram-writing functionality.
+The PandoraMonitoring library depends on the PandoraSDK and ROOT.
+Pandora algorithms will necessarily depend upon the PandoraSDK (and also PandoraMonitoring, if desired).
+The algorithms can be built as part of a Pandora client application, such as MarlinPandora, or the standalone TestPandora binary.
+Algorithms declared to be suitably generic may be designed for use by multiple client applications.
+Such re-usable algorithms are best bundled together into a Pandora "content" library.
+Algorithms are always registered via the client application, using the PandoraAPIs, but the client app can link against as many content libraries as required.
+--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,28 @@
+##############################################################################
+# cmake configuration file for LCContent
+#
+# returns following variables:
+#
+#   LCContent_FOUND      : set to TRUE if LCContent found
+#
+#   LCContent_ROOT       : path to this LCContent installation
+#   LCContent_VERSION    : package version
+#   LCContent_LIBRARIES  : list of LCContent libraries (NOT including COMPONENTS)
+#   LCContent_INCLUDE_DIRS  : list of paths to be used with INCLUDE_DIRECTORIES
+#   LCContent_LIBRARY_DIRS  : list of paths to be used with LINK_DIRECTORIES
+#
+##############################################################################
+@PACKAGE_INIT@
+
+set_and_check(LCContent_ROOT "@CMAKE_INSTALL_PREFIX@")
+set_and_check(LCContent_INCLUDE_DIRS "@PACKAGE_CMAKE_INSTALL_INCLUDEDIR@")
+set_and_check(LCContent_LIBRARY_DIRS "@PACKAGE_CMAKE_INSTALL_LIBDIR@")
+set(LCContent_LIBRARIES "@LCContent_LIBRARIES@")
+
+include(CMakeFindDependencyMacro)
+find_dependency(PandoraSDK REQUIRED)
+
+include("${CMAKE_CURRENT_LIST_DIR}/LCContentTargets.cmake")
+
+check_required_components(LCContent)
+

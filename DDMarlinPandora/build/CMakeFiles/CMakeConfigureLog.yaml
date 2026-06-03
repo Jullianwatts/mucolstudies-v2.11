@@ -1,0 +1,966 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:9 (PROJECT)"
+    message: |
+      The system is: Linux - 5.14.0-570.42.2.el9_6.x86_64 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:9 (PROJECT)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/3.31.8/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:9 (PROJECT)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/3.31.8/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:9 (PROJECT)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-mr2giY"
+      binary: "/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-mr2giY"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-mr2giY'
+        
+        Run Build Command(s): /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/bin/cmake -E env VERBOSE=1 /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/gmake-4.4.1-72zrv7n6b25bzt5tkjwi6xfea6ldqalr/bin/gmake -f Makefile cmTC_284a2/fast
+        /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/gmake-4.4.1-72zrv7n6b25bzt5tkjwi6xfea6ldqalr/bin/gmake  -f CMakeFiles/cmTC_284a2.dir/build.make CMakeFiles/cmTC_284a2.dir/build
+        gmake[1]: Entering directory '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-mr2giY'
+        Building C object CMakeFiles/cmTC_284a2.dir/CMakeCCompilerABI.c.o
+        /usr/bin/gcc   -v -o CMakeFiles/cmTC_284a2.dir/CMakeCCompilerABI.c.o -c /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/gcc
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_284a2.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_284a2.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_284a2.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccXKWF2s.s
+        GNU C17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/vdt-0.4.6-mfaghtw6c5v3hz4we6zsgal4zd3dodkg/include
+         /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/kaldet-1.14.1-taccmjev3w2d55jtc5rtwqx366ucxth4/include/kaldet
+         /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/kaltest-2.5.2-2zfvhnogew4kmjtop5q7vbmvkc3zx2xe/include/kaltest
+         /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/lcio-2.22.6-pm4avkqlnhxxrpypnu7rieazthmlcjyb
+         /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/eigen-3.4.0-yo74cqpi677jvxszkh7qbdhzgiouhwy5/include/eigen3
+         .
+         /usr/lib/gcc/x86_64-linux-gnu/13/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 38987c28e967c64056a6454abdef726e
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_284a2.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_284a2.dir/'
+         as -v --64 -o CMakeFiles/cmTC_284a2.dir/CMakeCCompilerABI.c.o /tmp/ccXKWF2s.s
+        GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_284a2.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_284a2.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_284a2
+        /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/bin/cmake -E cmake_link_script CMakeFiles/cmTC_284a2.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/gcc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_284a2' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_284a2.'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccxwwxhv.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_284a2 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. -v CMakeFiles/cmTC_284a2.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        collect2 version 13.3.0
+        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccxwwxhv.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_284a2 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. -v CMakeFiles/cmTC_284a2.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.42
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_284a2' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_284a2.'
+        /usr/bin/gcc  -v -Wl,-v -rdynamic CMakeFiles/cmTC_284a2.dir/CMakeCCompilerABI.c.o -o cmTC_284a2
+        gmake[1]: Leaving directory '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-mr2giY'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:9 (PROJECT)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/vdt-0.4.6-mfaghtw6c5v3hz4we6zsgal4zd3dodkg/include]
+          add: [/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/kaldet-1.14.1-taccmjev3w2d55jtc5rtwqx366ucxth4/include/kaldet]
+          add: [/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/kaltest-2.5.2-2zfvhnogew4kmjtop5q7vbmvkc3zx2xe/include/kaltest]
+          add: [/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/lcio-2.22.6-pm4avkqlnhxxrpypnu7rieazthmlcjyb]
+          add: [/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/eigen-3.4.0-yo74cqpi677jvxszkh7qbdhzgiouhwy5/include/eigen3]
+          add: [.]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/vdt-0.4.6-mfaghtw6c5v3hz4we6zsgal4zd3dodkg/include] ==> [/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/vdt-0.4.6-mfaghtw6c5v3hz4we6zsgal4zd3dodkg/include]
+        collapse include dir [/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/kaldet-1.14.1-taccmjev3w2d55jtc5rtwqx366ucxth4/include/kaldet] ==> [/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/kaldet-1.14.1-taccmjev3w2d55jtc5rtwqx366ucxth4/include/kaldet]
+        collapse include dir [/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/kaltest-2.5.2-2zfvhnogew4kmjtop5q7vbmvkc3zx2xe/include/kaltest] ==> [/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/kaltest-2.5.2-2zfvhnogew4kmjtop5q7vbmvkc3zx2xe/include/kaltest]
+        collapse include dir [/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/lcio-2.22.6-pm4avkqlnhxxrpypnu7rieazthmlcjyb] ==> [/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/lcio-2.22.6-pm4avkqlnhxxrpypnu7rieazthmlcjyb]
+        collapse include dir [/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/eigen-3.4.0-yo74cqpi677jvxszkh7qbdhzgiouhwy5/include/eigen3] ==> [/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/eigen-3.4.0-yo74cqpi677jvxszkh7qbdhzgiouhwy5/include/eigen3]
+        skipping relative include dir [.]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/13/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/vdt-0.4.6-mfaghtw6c5v3hz4we6zsgal4zd3dodkg/include;/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/kaldet-1.14.1-taccmjev3w2d55jtc5rtwqx366ucxth4/include/kaldet;/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/kaltest-2.5.2-2zfvhnogew4kmjtop5q7vbmvkc3zx2xe/include/kaltest;/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/lcio-2.22.6-pm4avkqlnhxxrpypnu7rieazthmlcjyb;/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/eigen-3.4.0-yo74cqpi677jvxszkh7qbdhzgiouhwy5/include/eigen3;/usr/lib/gcc/x86_64-linux-gnu/13/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:9 (PROJECT)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-mr2giY']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/bin/cmake -E env VERBOSE=1 /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/gmake-4.4.1-72zrv7n6b25bzt5tkjwi6xfea6ldqalr/bin/gmake -f Makefile cmTC_284a2/fast]
+        ignore line: [/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/gmake-4.4.1-72zrv7n6b25bzt5tkjwi6xfea6ldqalr/bin/gmake  -f CMakeFiles/cmTC_284a2.dir/build.make CMakeFiles/cmTC_284a2.dir/build]
+        ignore line: [gmake[1]: Entering directory '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-mr2giY']
+        ignore line: [Building C object CMakeFiles/cmTC_284a2.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/gcc   -v -o CMakeFiles/cmTC_284a2.dir/CMakeCCompilerABI.c.o -c /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/gcc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_284a2.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_284a2.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_284a2.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccXKWF2s.s]
+        ignore line: [GNU C17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/vdt-0.4.6-mfaghtw6c5v3hz4we6zsgal4zd3dodkg/include]
+        ignore line: [ /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/kaldet-1.14.1-taccmjev3w2d55jtc5rtwqx366ucxth4/include/kaldet]
+        ignore line: [ /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/kaltest-2.5.2-2zfvhnogew4kmjtop5q7vbmvkc3zx2xe/include/kaltest]
+        ignore line: [ /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/lcio-2.22.6-pm4avkqlnhxxrpypnu7rieazthmlcjyb]
+        ignore line: [ /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/eigen-3.4.0-yo74cqpi677jvxszkh7qbdhzgiouhwy5/include/eigen3]
+        ignore line: [ .]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/13/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 38987c28e967c64056a6454abdef726e]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_284a2.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_284a2.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_284a2.dir/CMakeCCompilerABI.c.o /tmp/ccXKWF2s.s]
+        ignore line: [GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_284a2.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_284a2.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_284a2]
+        ignore line: [/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/bin/cmake -E cmake_link_script CMakeFiles/cmTC_284a2.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_284a2' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_284a2.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccxwwxhv.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_284a2 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. -v CMakeFiles/cmTC_284a2.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccxwwxhv.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_284a2] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_284a2.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 13.3.0]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccxwwxhv.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_284a2 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. -v CMakeFiles/cmTC_284a2.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:9 (PROJECT)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.42
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:9 (PROJECT)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-RKtwWm"
+      binary: "/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-RKtwWm"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-RKtwWm'
+        
+        Run Build Command(s): /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/bin/cmake -E env VERBOSE=1 /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/gmake-4.4.1-72zrv7n6b25bzt5tkjwi6xfea6ldqalr/bin/gmake -f Makefile cmTC_aa7f6/fast
+        /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/gmake-4.4.1-72zrv7n6b25bzt5tkjwi6xfea6ldqalr/bin/gmake  -f CMakeFiles/cmTC_aa7f6.dir/build.make CMakeFiles/cmTC_aa7f6.dir/build
+        gmake[1]: Entering directory '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-RKtwWm'
+        Building CXX object CMakeFiles/cmTC_aa7f6.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/g++   -v -o CMakeFiles/cmTC_aa7f6.dir/CMakeCXXCompilerABI.cpp.o -c /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/g++
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_aa7f6.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_aa7f6.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_aa7f6.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccqdDhsR.s
+        GNU C++17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/13"
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/vdt-0.4.6-mfaghtw6c5v3hz4we6zsgal4zd3dodkg/include
+         /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/kaldet-1.14.1-taccmjev3w2d55jtc5rtwqx366ucxth4/include/kaldet
+         /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/kaltest-2.5.2-2zfvhnogew4kmjtop5q7vbmvkc3zx2xe/include/kaltest
+         /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/lcio-2.22.6-pm4avkqlnhxxrpypnu7rieazthmlcjyb
+         /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/eigen-3.4.0-yo74cqpi677jvxszkh7qbdhzgiouhwy5/include/eigen3
+         .
+         /usr/include/c++/13
+         /usr/include/x86_64-linux-gnu/c++/13
+         /usr/include/c++/13/backward
+         /usr/lib/gcc/x86_64-linux-gnu/13/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: c81c05345ce537099dafd5580045814a
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_aa7f6.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_aa7f6.dir/'
+         as -v --64 -o CMakeFiles/cmTC_aa7f6.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccqdDhsR.s
+        GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_aa7f6.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_aa7f6.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_aa7f6
+        /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aa7f6.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/g++
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_aa7f6' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_aa7f6.'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZeR6BG.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_aa7f6 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. -v CMakeFiles/cmTC_aa7f6.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        collect2 version 13.3.0
+        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZeR6BG.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_aa7f6 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. -v CMakeFiles/cmTC_aa7f6.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.42
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_aa7f6' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_aa7f6.'
+        /usr/bin/g++  -v -Wl,-v -rdynamic CMakeFiles/cmTC_aa7f6.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_aa7f6
+        gmake[1]: Leaving directory '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-RKtwWm'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:9 (PROJECT)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/vdt-0.4.6-mfaghtw6c5v3hz4we6zsgal4zd3dodkg/include]
+          add: [/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/kaldet-1.14.1-taccmjev3w2d55jtc5rtwqx366ucxth4/include/kaldet]
+          add: [/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/kaltest-2.5.2-2zfvhnogew4kmjtop5q7vbmvkc3zx2xe/include/kaltest]
+          add: [/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/lcio-2.22.6-pm4avkqlnhxxrpypnu7rieazthmlcjyb]
+          add: [/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/eigen-3.4.0-yo74cqpi677jvxszkh7qbdhzgiouhwy5/include/eigen3]
+          add: [.]
+          add: [/usr/include/c++/13]
+          add: [/usr/include/x86_64-linux-gnu/c++/13]
+          add: [/usr/include/c++/13/backward]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/vdt-0.4.6-mfaghtw6c5v3hz4we6zsgal4zd3dodkg/include] ==> [/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/vdt-0.4.6-mfaghtw6c5v3hz4we6zsgal4zd3dodkg/include]
+        collapse include dir [/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/kaldet-1.14.1-taccmjev3w2d55jtc5rtwqx366ucxth4/include/kaldet] ==> [/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/kaldet-1.14.1-taccmjev3w2d55jtc5rtwqx366ucxth4/include/kaldet]
+        collapse include dir [/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/kaltest-2.5.2-2zfvhnogew4kmjtop5q7vbmvkc3zx2xe/include/kaltest] ==> [/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/kaltest-2.5.2-2zfvhnogew4kmjtop5q7vbmvkc3zx2xe/include/kaltest]
+        collapse include dir [/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/lcio-2.22.6-pm4avkqlnhxxrpypnu7rieazthmlcjyb] ==> [/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/lcio-2.22.6-pm4avkqlnhxxrpypnu7rieazthmlcjyb]
+        collapse include dir [/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/eigen-3.4.0-yo74cqpi677jvxszkh7qbdhzgiouhwy5/include/eigen3] ==> [/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/eigen-3.4.0-yo74cqpi677jvxszkh7qbdhzgiouhwy5/include/eigen3]
+        skipping relative include dir [.]
+        collapse include dir [/usr/include/c++/13] ==> [/usr/include/c++/13]
+        collapse include dir [/usr/include/x86_64-linux-gnu/c++/13] ==> [/usr/include/x86_64-linux-gnu/c++/13]
+        collapse include dir [/usr/include/c++/13/backward] ==> [/usr/include/c++/13/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/13/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/vdt-0.4.6-mfaghtw6c5v3hz4we6zsgal4zd3dodkg/include;/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/kaldet-1.14.1-taccmjev3w2d55jtc5rtwqx366ucxth4/include/kaldet;/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/kaltest-2.5.2-2zfvhnogew4kmjtop5q7vbmvkc3zx2xe/include/kaltest;/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/lcio-2.22.6-pm4avkqlnhxxrpypnu7rieazthmlcjyb;/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/eigen-3.4.0-yo74cqpi677jvxszkh7qbdhzgiouhwy5/include/eigen3;/usr/include/c++/13;/usr/include/x86_64-linux-gnu/c++/13;/usr/include/c++/13/backward;/usr/lib/gcc/x86_64-linux-gnu/13/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:9 (PROJECT)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-RKtwWm']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/bin/cmake -E env VERBOSE=1 /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/gmake-4.4.1-72zrv7n6b25bzt5tkjwi6xfea6ldqalr/bin/gmake -f Makefile cmTC_aa7f6/fast]
+        ignore line: [/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/gmake-4.4.1-72zrv7n6b25bzt5tkjwi6xfea6ldqalr/bin/gmake  -f CMakeFiles/cmTC_aa7f6.dir/build.make CMakeFiles/cmTC_aa7f6.dir/build]
+        ignore line: [gmake[1]: Entering directory '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-RKtwWm']
+        ignore line: [Building CXX object CMakeFiles/cmTC_aa7f6.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/g++   -v -o CMakeFiles/cmTC_aa7f6.dir/CMakeCXXCompilerABI.cpp.o -c /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/g++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_aa7f6.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_aa7f6.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_aa7f6.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccqdDhsR.s]
+        ignore line: [GNU C++17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/13"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/vdt-0.4.6-mfaghtw6c5v3hz4we6zsgal4zd3dodkg/include]
+        ignore line: [ /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/kaldet-1.14.1-taccmjev3w2d55jtc5rtwqx366ucxth4/include/kaldet]
+        ignore line: [ /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/kaltest-2.5.2-2zfvhnogew4kmjtop5q7vbmvkc3zx2xe/include/kaltest]
+        ignore line: [ /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/lcio-2.22.6-pm4avkqlnhxxrpypnu7rieazthmlcjyb]
+        ignore line: [ /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/eigen-3.4.0-yo74cqpi677jvxszkh7qbdhzgiouhwy5/include/eigen3]
+        ignore line: [ .]
+        ignore line: [ /usr/include/c++/13]
+        ignore line: [ /usr/include/x86_64-linux-gnu/c++/13]
+        ignore line: [ /usr/include/c++/13/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/13/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: c81c05345ce537099dafd5580045814a]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_aa7f6.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_aa7f6.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_aa7f6.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccqdDhsR.s]
+        ignore line: [GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_aa7f6.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_aa7f6.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_aa7f6]
+        ignore line: [/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aa7f6.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_aa7f6' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_aa7f6.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZeR6BG.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_aa7f6 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. -v CMakeFiles/cmTC_aa7f6.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccZeR6BG.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_aa7f6] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_aa7f6.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 13.3.0]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZeR6BG.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_aa7f6 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. -v CMakeFiles/cmTC_aa7f6.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:9 (PROJECT)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.42
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/ilcutil-1.8-33jeamu4b2ubuag6f6o2u2emszxlbnmv/cmakemodules/ilcsoft_default_cxx_flags.cmake:23 (CHECK_CXX_COMPILER_FLAG)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/ilcutil-1.8-33jeamu4b2ubuag6f6o2u2emszxlbnmv/cmakemodules/ilcsoft_default_settings.cmake:23 (INCLUDE)"
+      - "CMakeLists.txt:23 (INCLUDE)"
+    checks:
+      - "Performing Test CXX_FLAG_WORKS__Wall"
+    directories:
+      source: "/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-mF0KrS"
+      binary: "/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-mF0KrS"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/ilcutil-1.8-33jeamu4b2ubuag6f6o2u2emszxlbnmv/cmakemodules"
+    buildResult:
+      variable: "CXX_FLAG_WORKS__Wall"
+      cached: true
+      stdout: |
+        Change Dir: '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-mF0KrS'
+        
+        Run Build Command(s): /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/bin/cmake -E env VERBOSE=1 /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/gmake-4.4.1-72zrv7n6b25bzt5tkjwi6xfea6ldqalr/bin/gmake -f Makefile cmTC_b2b8b/fast
+        /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/gmake-4.4.1-72zrv7n6b25bzt5tkjwi6xfea6ldqalr/bin/gmake  -f CMakeFiles/cmTC_b2b8b.dir/build.make CMakeFiles/cmTC_b2b8b.dir/build
+        gmake[1]: Entering directory '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-mF0KrS'
+        Building CXX object CMakeFiles/cmTC_b2b8b.dir/src.cxx.o
+        /usr/bin/g++ -DCXX_FLAG_WORKS__Wall  -Wall -o CMakeFiles/cmTC_b2b8b.dir/src.cxx.o -c /scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-mF0KrS/src.cxx
+        Linking CXX executable cmTC_b2b8b
+        /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2b8b.dir/link.txt --verbose=1
+        /usr/bin/g++ -rdynamic CMakeFiles/cmTC_b2b8b.dir/src.cxx.o -o cmTC_b2b8b
+        gmake[1]: Leaving directory '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-mF0KrS'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/ilcutil-1.8-33jeamu4b2ubuag6f6o2u2emszxlbnmv/cmakemodules/ilcsoft_default_cxx_flags.cmake:23 (CHECK_CXX_COMPILER_FLAG)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/ilcutil-1.8-33jeamu4b2ubuag6f6o2u2emszxlbnmv/cmakemodules/ilcsoft_default_settings.cmake:23 (INCLUDE)"
+      - "CMakeLists.txt:23 (INCLUDE)"
+    checks:
+      - "Performing Test CXX_FLAG_WORKS__Wextra"
+    directories:
+      source: "/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-5ogn4E"
+      binary: "/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-5ogn4E"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-Wall "
+      CMAKE_MODULE_PATH: "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/ilcutil-1.8-33jeamu4b2ubuag6f6o2u2emszxlbnmv/cmakemodules"
+    buildResult:
+      variable: "CXX_FLAG_WORKS__Wextra"
+      cached: true
+      stdout: |
+        Change Dir: '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-5ogn4E'
+        
+        Run Build Command(s): /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/bin/cmake -E env VERBOSE=1 /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/gmake-4.4.1-72zrv7n6b25bzt5tkjwi6xfea6ldqalr/bin/gmake -f Makefile cmTC_07a07/fast
+        /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/gmake-4.4.1-72zrv7n6b25bzt5tkjwi6xfea6ldqalr/bin/gmake  -f CMakeFiles/cmTC_07a07.dir/build.make CMakeFiles/cmTC_07a07.dir/build
+        gmake[1]: Entering directory '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-5ogn4E'
+        Building CXX object CMakeFiles/cmTC_07a07.dir/src.cxx.o
+        /usr/bin/g++ -DCXX_FLAG_WORKS__Wextra  -Wall     -Wextra -o CMakeFiles/cmTC_07a07.dir/src.cxx.o -c /scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-5ogn4E/src.cxx
+        Linking CXX executable cmTC_07a07
+        /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07a07.dir/link.txt --verbose=1
+        /usr/bin/g++ -Wall   -rdynamic CMakeFiles/cmTC_07a07.dir/src.cxx.o -o cmTC_07a07
+        gmake[1]: Leaving directory '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-5ogn4E'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/ilcutil-1.8-33jeamu4b2ubuag6f6o2u2emszxlbnmv/cmakemodules/ilcsoft_default_cxx_flags.cmake:23 (CHECK_CXX_COMPILER_FLAG)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/ilcutil-1.8-33jeamu4b2ubuag6f6o2u2emszxlbnmv/cmakemodules/ilcsoft_default_settings.cmake:23 (INCLUDE)"
+      - "CMakeLists.txt:23 (INCLUDE)"
+    checks:
+      - "Performing Test CXX_FLAG_WORKS__Wshadow"
+    directories:
+      source: "/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-41o4XT"
+      binary: "/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-41o4XT"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-Wextra -Wall "
+      CMAKE_MODULE_PATH: "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/ilcutil-1.8-33jeamu4b2ubuag6f6o2u2emszxlbnmv/cmakemodules"
+    buildResult:
+      variable: "CXX_FLAG_WORKS__Wshadow"
+      cached: true
+      stdout: |
+        Change Dir: '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-41o4XT'
+        
+        Run Build Command(s): /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/bin/cmake -E env VERBOSE=1 /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/gmake-4.4.1-72zrv7n6b25bzt5tkjwi6xfea6ldqalr/bin/gmake -f Makefile cmTC_1e8dc/fast
+        /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/gmake-4.4.1-72zrv7n6b25bzt5tkjwi6xfea6ldqalr/bin/gmake  -f CMakeFiles/cmTC_1e8dc.dir/build.make CMakeFiles/cmTC_1e8dc.dir/build
+        gmake[1]: Entering directory '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-41o4XT'
+        Building CXX object CMakeFiles/cmTC_1e8dc.dir/src.cxx.o
+        /usr/bin/g++ -DCXX_FLAG_WORKS__Wshadow  -Wextra -Wall     -Wshadow -o CMakeFiles/cmTC_1e8dc.dir/src.cxx.o -c /scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-41o4XT/src.cxx
+        Linking CXX executable cmTC_1e8dc
+        /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1e8dc.dir/link.txt --verbose=1
+        /usr/bin/g++ -Wextra -Wall   -rdynamic CMakeFiles/cmTC_1e8dc.dir/src.cxx.o -o cmTC_1e8dc
+        gmake[1]: Leaving directory '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-41o4XT'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/ilcutil-1.8-33jeamu4b2ubuag6f6o2u2emszxlbnmv/cmakemodules/ilcsoft_default_cxx_flags.cmake:23 (CHECK_CXX_COMPILER_FLAG)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/ilcutil-1.8-33jeamu4b2ubuag6f6o2u2emszxlbnmv/cmakemodules/ilcsoft_default_settings.cmake:23 (INCLUDE)"
+      - "CMakeLists.txt:23 (INCLUDE)"
+    checks:
+      - "Performing Test CXX_FLAG_WORKS__WeffcPP"
+    directories:
+      source: "/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-ETVr7S"
+      binary: "/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-ETVr7S"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-Wshadow -Wextra -Wall "
+      CMAKE_MODULE_PATH: "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/ilcutil-1.8-33jeamu4b2ubuag6f6o2u2emszxlbnmv/cmakemodules"
+    buildResult:
+      variable: "CXX_FLAG_WORKS__WeffcPP"
+      cached: true
+      stdout: |
+        Change Dir: '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-ETVr7S'
+        
+        Run Build Command(s): /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/bin/cmake -E env VERBOSE=1 /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/gmake-4.4.1-72zrv7n6b25bzt5tkjwi6xfea6ldqalr/bin/gmake -f Makefile cmTC_fc70e/fast
+        /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/gmake-4.4.1-72zrv7n6b25bzt5tkjwi6xfea6ldqalr/bin/gmake  -f CMakeFiles/cmTC_fc70e.dir/build.make CMakeFiles/cmTC_fc70e.dir/build
+        gmake[1]: Entering directory '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-ETVr7S'
+        Building CXX object CMakeFiles/cmTC_fc70e.dir/src.cxx.o
+        /usr/bin/g++ -DCXX_FLAG_WORKS__WeffcPP  -Wshadow -Wextra -Wall     -Weffc++ -o CMakeFiles/cmTC_fc70e.dir/src.cxx.o -c /scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-ETVr7S/src.cxx
+        Linking CXX executable cmTC_fc70e
+        /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fc70e.dir/link.txt --verbose=1
+        /usr/bin/g++ -Wshadow -Wextra -Wall   -rdynamic CMakeFiles/cmTC_fc70e.dir/src.cxx.o -o cmTC_fc70e
+        gmake[1]: Leaving directory '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-ETVr7S'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/ilcutil-1.8-33jeamu4b2ubuag6f6o2u2emszxlbnmv/cmakemodules/ilcsoft_default_cxx_flags.cmake:23 (CHECK_CXX_COMPILER_FLAG)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/ilcutil-1.8-33jeamu4b2ubuag6f6o2u2emszxlbnmv/cmakemodules/ilcsoft_default_settings.cmake:23 (INCLUDE)"
+      - "CMakeLists.txt:23 (INCLUDE)"
+    checks:
+      - "Performing Test CXX_FLAG_WORKS__pedantic"
+    directories:
+      source: "/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-TUsVlb"
+      binary: "/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-TUsVlb"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-Weffc++ -Wshadow -Wextra -Wall "
+      CMAKE_MODULE_PATH: "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/ilcutil-1.8-33jeamu4b2ubuag6f6o2u2emszxlbnmv/cmakemodules"
+    buildResult:
+      variable: "CXX_FLAG_WORKS__pedantic"
+      cached: true
+      stdout: |
+        Change Dir: '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-TUsVlb'
+        
+        Run Build Command(s): /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/bin/cmake -E env VERBOSE=1 /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/gmake-4.4.1-72zrv7n6b25bzt5tkjwi6xfea6ldqalr/bin/gmake -f Makefile cmTC_f43db/fast
+        /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/gmake-4.4.1-72zrv7n6b25bzt5tkjwi6xfea6ldqalr/bin/gmake  -f CMakeFiles/cmTC_f43db.dir/build.make CMakeFiles/cmTC_f43db.dir/build
+        gmake[1]: Entering directory '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-TUsVlb'
+        Building CXX object CMakeFiles/cmTC_f43db.dir/src.cxx.o
+        /usr/bin/g++ -DCXX_FLAG_WORKS__pedantic  -Weffc++ -Wshadow -Wextra -Wall     -pedantic -o CMakeFiles/cmTC_f43db.dir/src.cxx.o -c /scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-TUsVlb/src.cxx
+        Linking CXX executable cmTC_f43db
+        /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f43db.dir/link.txt --verbose=1
+        /usr/bin/g++ -Weffc++ -Wshadow -Wextra -Wall   -rdynamic CMakeFiles/cmTC_f43db.dir/src.cxx.o -o cmTC_f43db
+        gmake[1]: Leaving directory '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-TUsVlb'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/ilcutil-1.8-33jeamu4b2ubuag6f6o2u2emszxlbnmv/cmakemodules/ilcsoft_default_cxx_flags.cmake:23 (CHECK_CXX_COMPILER_FLAG)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/ilcutil-1.8-33jeamu4b2ubuag6f6o2u2emszxlbnmv/cmakemodules/ilcsoft_default_settings.cmake:23 (INCLUDE)"
+      - "CMakeLists.txt:23 (INCLUDE)"
+    checks:
+      - "Performing Test CXX_FLAG_WORKS__Wno_long_long"
+    directories:
+      source: "/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-SWskVB"
+      binary: "/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-SWskVB"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-pedantic -Weffc++ -Wshadow -Wextra -Wall "
+      CMAKE_MODULE_PATH: "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/ilcutil-1.8-33jeamu4b2ubuag6f6o2u2emszxlbnmv/cmakemodules"
+    buildResult:
+      variable: "CXX_FLAG_WORKS__Wno_long_long"
+      cached: true
+      stdout: |
+        Change Dir: '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-SWskVB'
+        
+        Run Build Command(s): /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/bin/cmake -E env VERBOSE=1 /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/gmake-4.4.1-72zrv7n6b25bzt5tkjwi6xfea6ldqalr/bin/gmake -f Makefile cmTC_9c5a9/fast
+        /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/gmake-4.4.1-72zrv7n6b25bzt5tkjwi6xfea6ldqalr/bin/gmake  -f CMakeFiles/cmTC_9c5a9.dir/build.make CMakeFiles/cmTC_9c5a9.dir/build
+        gmake[1]: Entering directory '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-SWskVB'
+        Building CXX object CMakeFiles/cmTC_9c5a9.dir/src.cxx.o
+        /usr/bin/g++ -DCXX_FLAG_WORKS__Wno_long_long  -pedantic -Weffc++ -Wshadow -Wextra -Wall     -Wno-long-long -o CMakeFiles/cmTC_9c5a9.dir/src.cxx.o -c /scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-SWskVB/src.cxx
+        Linking CXX executable cmTC_9c5a9
+        /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9c5a9.dir/link.txt --verbose=1
+        /usr/bin/g++ -pedantic -Weffc++ -Wshadow -Wextra -Wall   -rdynamic CMakeFiles/cmTC_9c5a9.dir/src.cxx.o -o cmTC_9c5a9
+        gmake[1]: Leaving directory '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-SWskVB'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/ilcutil-1.8-33jeamu4b2ubuag6f6o2u2emszxlbnmv/cmakemodules/ilcsoft_default_cxx_flags.cmake:23 (CHECK_CXX_COMPILER_FLAG)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/ilcutil-1.8-33jeamu4b2ubuag6f6o2u2emszxlbnmv/cmakemodules/ilcsoft_default_settings.cmake:23 (INCLUDE)"
+      - "CMakeLists.txt:23 (INCLUDE)"
+    checks:
+      - "Performing Test CXX_FLAG_WORKS__Wuninitialized"
+    directories:
+      source: "/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-bM7xSm"
+      binary: "/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-bM7xSm"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-Wno-long-long -pedantic -Weffc++ -Wshadow -Wextra -Wall "
+      CMAKE_MODULE_PATH: "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/ilcutil-1.8-33jeamu4b2ubuag6f6o2u2emszxlbnmv/cmakemodules"
+    buildResult:
+      variable: "CXX_FLAG_WORKS__Wuninitialized"
+      cached: true
+      stdout: |
+        Change Dir: '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-bM7xSm'
+        
+        Run Build Command(s): /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/bin/cmake -E env VERBOSE=1 /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/gmake-4.4.1-72zrv7n6b25bzt5tkjwi6xfea6ldqalr/bin/gmake -f Makefile cmTC_ad1b7/fast
+        /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/gmake-4.4.1-72zrv7n6b25bzt5tkjwi6xfea6ldqalr/bin/gmake  -f CMakeFiles/cmTC_ad1b7.dir/build.make CMakeFiles/cmTC_ad1b7.dir/build
+        gmake[1]: Entering directory '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-bM7xSm'
+        Building CXX object CMakeFiles/cmTC_ad1b7.dir/src.cxx.o
+        /usr/bin/g++ -DCXX_FLAG_WORKS__Wuninitialized  -Wno-long-long -pedantic -Weffc++ -Wshadow -Wextra -Wall     -Wuninitialized -o CMakeFiles/cmTC_ad1b7.dir/src.cxx.o -c /scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-bM7xSm/src.cxx
+        Linking CXX executable cmTC_ad1b7
+        /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ad1b7.dir/link.txt --verbose=1
+        /usr/bin/g++ -Wno-long-long -pedantic -Weffc++ -Wshadow -Wextra -Wall   -rdynamic CMakeFiles/cmTC_ad1b7.dir/src.cxx.o -o cmTC_ad1b7
+        gmake[1]: Leaving directory '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-bM7xSm'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/ilcutil-1.8-33jeamu4b2ubuag6f6o2u2emszxlbnmv/cmakemodules/ilcsoft_default_cxx_flags.cmake:23 (CHECK_CXX_COMPILER_FLAG)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/ilcutil-1.8-33jeamu4b2ubuag6f6o2u2emszxlbnmv/cmakemodules/ilcsoft_default_settings.cmake:23 (INCLUDE)"
+      - "CMakeLists.txt:23 (INCLUDE)"
+    checks:
+      - "Performing Test CXX_FLAG_WORKS__Wl,_no_undefined"
+    directories:
+      source: "/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-EKy1cM"
+      binary: "/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-EKy1cM"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-Wuninitialized -Wno-long-long -pedantic -Weffc++ -Wshadow -Wextra -Wall "
+      CMAKE_MODULE_PATH: "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/ilcutil-1.8-33jeamu4b2ubuag6f6o2u2emszxlbnmv/cmakemodules"
+    buildResult:
+      variable: "CXX_FLAG_WORKS__Wl,_no_undefined"
+      cached: true
+      stdout: |
+        Change Dir: '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-EKy1cM'
+        
+        Run Build Command(s): /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/bin/cmake -E env VERBOSE=1 /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/gmake-4.4.1-72zrv7n6b25bzt5tkjwi6xfea6ldqalr/bin/gmake -f Makefile cmTC_41551/fast
+        /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/gmake-4.4.1-72zrv7n6b25bzt5tkjwi6xfea6ldqalr/bin/gmake  -f CMakeFiles/cmTC_41551.dir/build.make CMakeFiles/cmTC_41551.dir/build
+        gmake[1]: Entering directory '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-EKy1cM'
+        Building CXX object CMakeFiles/cmTC_41551.dir/src.cxx.o
+        /usr/bin/g++   -Wuninitialized -Wno-long-long -pedantic -Weffc++ -Wshadow -Wextra -Wall     -DCXX_FLAG_WORKS__Wl,_no_undefined -Wl,-no-undefined -o CMakeFiles/cmTC_41551.dir/src.cxx.o -c /scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-EKy1cM/src.cxx
+        <command-line>: warning: ISO C++11 requires whitespace after the macro name
+        Linking CXX executable cmTC_41551
+        /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/bin/cmake -E cmake_link_script CMakeFiles/cmTC_41551.dir/link.txt --verbose=1
+        /usr/bin/g++ -Wuninitialized -Wno-long-long -pedantic -Weffc++ -Wshadow -Wextra -Wall   -rdynamic CMakeFiles/cmTC_41551.dir/src.cxx.o -o cmTC_41551
+        gmake[1]: Leaving directory '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-EKy1cM'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/geant4-11.3.2-ax627yjh52wppv2z4we3oy5z4vwyufzc/lib/cmake/Geant4/PTL/PTLConfig.cmake:56 (find_dependency)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/geant4-11.3.2-ax627yjh52wppv2z4we3oy5z4vwyufzc/lib/cmake/Geant4/Geant4Config.cmake:301 (find_dependency)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/dd4hep-1.32.1-6xccwvvjhkgswcovflawvlg4qh7b2xlp/cmake/DD4hepConfig.cmake:57 (find_dependency)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/marlinutil-1.18.2-fhvzmfcywaoad2hlsriixuqpwqv3zywa/MarlinUtilConfig.cmake:48 (FIND_PACKAGE)"
+      - "CMakeLists.txt:37 (FIND_PACKAGE)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-9FiobX"
+      binary: "/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-9FiobX"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/geant4-11.3.2-ax627yjh52wppv2z4we3oy5z4vwyufzc/lib/cmake/Geant4/Modules;/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/ilcutil-1.8-33jeamu4b2ubuag6f6o2u2emszxlbnmv/cmakemodules;/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/dd4hep-1.32.1-6xccwvvjhkgswcovflawvlg4qh7b2xlp/cmake;/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/dd4hep-1.32.1-6xccwvvjhkgswcovflawvlg4qh7b2xlp/cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-9FiobX'
+        
+        Run Build Command(s): /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/bin/cmake -E env VERBOSE=1 /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/gmake-4.4.1-72zrv7n6b25bzt5tkjwi6xfea6ldqalr/bin/gmake -f Makefile cmTC_1e9b4/fast
+        /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/gmake-4.4.1-72zrv7n6b25bzt5tkjwi6xfea6ldqalr/bin/gmake  -f CMakeFiles/cmTC_1e9b4.dir/build.make CMakeFiles/cmTC_1e9b4.dir/build
+        gmake[1]: Entering directory '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-9FiobX'
+        Building C object CMakeFiles/cmTC_1e9b4.dir/src.c.o
+        /usr/bin/gcc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_1e9b4.dir/src.c.o -c /scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-9FiobX/src.c
+        Linking C executable cmTC_1e9b4
+        /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1e9b4.dir/link.txt --verbose=1
+        /usr/bin/gcc -rdynamic CMakeFiles/cmTC_1e9b4.dir/src.c.o -o cmTC_1e9b4
+        gmake[1]: Leaving directory '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-9FiobX'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/qt-base-6.9.1-idwsilj55ocro2vf6o6mdbk7f5usjp4u/lib/cmake/Qt6/FindWrapAtomic.cmake:36 (check_cxx_source_compiles)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/qt-base-6.9.1-idwsilj55ocro2vf6o6mdbk7f5usjp4u/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/qt-base-6.9.1-idwsilj55ocro2vf6o6mdbk7f5usjp4u/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake:35 (_qt_internal_find_third_party_dependencies)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/qt-base-6.9.1-idwsilj55ocro2vf6o6mdbk7f5usjp4u/lib/cmake/Qt6Core/Qt6CoreConfig.cmake:45 (include)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/geant4-11.3.2-ax627yjh52wppv2z4we3oy5z4vwyufzc/lib/cmake/Geant4/Geant4Config.cmake:371 (find_dependency)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/dd4hep-1.32.1-6xccwvvjhkgswcovflawvlg4qh7b2xlp/cmake/DD4hepConfig.cmake:57 (find_dependency)"
+      - "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/marlinutil-1.18.2-fhvzmfcywaoad2hlsriixuqpwqv3zywa/MarlinUtilConfig.cmake:48 (FIND_PACKAGE)"
+      - "CMakeLists.txt:37 (FIND_PACKAGE)"
+    checks:
+      - "Performing Test HAVE_STDATOMIC"
+    directories:
+      source: "/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-pUJjXz"
+      binary: "/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-pUJjXz"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-fdiagnostics-color=auto -Wl,-no-undefined -Wuninitialized -Wno-long-long -pedantic -Weffc++ -Wshadow -Wextra -Wall "
+      CMAKE_MODULE_PATH: "/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/geant4-11.3.2-ax627yjh52wppv2z4we3oy5z4vwyufzc/lib/cmake/Geant4/Modules;/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/ilcutil-1.8-33jeamu4b2ubuag6f6o2u2emszxlbnmv/cmakemodules;/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/dd4hep-1.32.1-6xccwvvjhkgswcovflawvlg4qh7b2xlp/cmake;/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/qt-base-6.9.1-idwsilj55ocro2vf6o6mdbk7f5usjp4u/lib/cmake/Qt6;/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/qt-base-6.9.1-idwsilj55ocro2vf6o6mdbk7f5usjp4u/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/qt-base-6.9.1-idwsilj55ocro2vf6o6mdbk7f5usjp4u/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "HAVE_STDATOMIC"
+      cached: true
+      stdout: |
+        Change Dir: '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-pUJjXz'
+        
+        Run Build Command(s): /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/bin/cmake -E env VERBOSE=1 /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/gmake-4.4.1-72zrv7n6b25bzt5tkjwi6xfea6ldqalr/bin/gmake -f Makefile cmTC_f599d/fast
+        /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/gmake-4.4.1-72zrv7n6b25bzt5tkjwi6xfea6ldqalr/bin/gmake  -f CMakeFiles/cmTC_f599d.dir/build.make CMakeFiles/cmTC_f599d.dir/build
+        gmake[1]: Entering directory '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-pUJjXz'
+        Building CXX object CMakeFiles/cmTC_f599d.dir/src.cxx.o
+        /usr/bin/g++ -DHAVE_STDATOMIC  -fdiagnostics-color=auto -Wl,-no-undefined -Wuninitialized -Wno-long-long -pedantic -Weffc++ -Wshadow -Wextra -Wall   -o CMakeFiles/cmTC_f599d.dir/src.cxx.o -c /scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-pUJjXz/src.cxx
+        Linking CXX executable cmTC_f599d
+        /opt/spack/opt/spack/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/__spack_path_placeholder__/linux-x86_64/cmake-3.31.8-iw2qt2ktqd7e2kfrppqv543hmouihcoi/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f599d.dir/link.txt --verbose=1
+        /usr/bin/g++ -fdiagnostics-color=auto -Wl,-no-undefined -Wuninitialized -Wno-long-long -pedantic -Weffc++ -Wshadow -Wextra -Wall   -rdynamic CMakeFiles/cmTC_f599d.dir/src.cxx.o -o cmTC_f599d
+        gmake[1]: Leaving directory '/scratch/trholmes/mucol/v2.11/DDMarlinPandora/build/CMakeFiles/CMakeScratch/TryCompile-pUJjXz'
+        
+      exitCode: 0
+...
