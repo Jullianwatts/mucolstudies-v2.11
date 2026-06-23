@@ -1,0 +1,24 @@
+Universe     = Vanilla
+Executable   = /scratch/jwatts/mucol/v2.11/condor/run_sim.sh
+Arguments    = 46 pionGun_gen_250_1000.slcio pion_250_1000_46.slcio
+
+Requirements = ( HAS_SINGULARITY ) && ( HAS_CVMFS_unpacked_cern_ch )
++SingularityImage = "/cvmfs/unpacked.cern.ch/ghcr.io/muoncollidersoft/mucoll-sim-ubuntu24:v2.11-amd64"
++SingularityBind  = "/ospool/uc-shared/project/futurecolliders/data/"
++ProjectName = "collab.futurecolliders"
+
+Error  = /scratch/jwatts/mucol/v2.11/condor/logs/pions_250_1000_46.err
+Output = /scratch/jwatts/mucol/v2.11/condor/logs/pions_250_1000_46.out
+Log    = /scratch/jwatts/mucol/v2.11/condor/logs/pions_250_1000_rerun46.log
+
+should_transfer_files = YES
+transfer_input_files  = /scratch/jwatts/mucol/v2.11/condor/pionGun_gen_250_1000.slcio, /scratch/jwatts/mucol/v2.11/condor/sim_steer_condor.py, /scratch/jwatts/mucol/v2.11/condor/MAIA_v0_container
+transfer_output_files = pion_250_1000_46.slcio
+output_directory      = /scratch/jwatts/mucol/v2.11/sim/pions_250_1000/
+WhenToTransferOutput  = ON_EXIT
+
+request_cpus   = 1
+request_memory = 10 GB
+request_disk   = 10 GB
+
+Queue
