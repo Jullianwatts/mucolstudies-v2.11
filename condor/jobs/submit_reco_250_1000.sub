@@ -1,0 +1,27 @@
+Universe     = Vanilla
+Executable   = /scratch/jwatts/mucol/v2.11/condor/jobs/run_reco.sh
+Arguments    = $(Process) pion_250_1000_$(Process).slcio pion_250_1000_reco_$(Process).slcio pions_250_1000
+
+Requirements = ( HAS_SINGULARITY ) && ( HAS_CVMFS_unpacked_cern_ch )
++SingularityImage = "/cvmfs/unpacked.cern.ch/ghcr.io/muoncollidersoft/mucoll-sim-ubuntu24:v2.11-amd64"
++ProjectName = "collab.futurecolliders"
+
+Error  = /scratch/jwatts/mucol/v2.11/condor/logs/reco_pions_250_1000_$(Process).err
+Output = /scratch/jwatts/mucol/v2.11/condor/logs/reco_pions_250_1000_$(Process).out
+Log    = /scratch/jwatts/mucol/v2.11/condor/logs/reco_pions_250_1000.log
+
+should_transfer_files = YES
+transfer_input_files  = /scratch/jwatts/mucol/v2.11/sim/pions_250_1000/pion_250_1000_$(Process).slcio, \
+                        /scratch/jwatts/mucol/v2.11/SteeringMacros/k4Reco/steer_reco.py, \
+                        /scratch/jwatts/mucol/v2.11/SteeringMacros/PandoraSettings, \
+                        /scratch/jwatts/mucol/v2.11/condor/jobs/LCContent_lib, \
+                        /scratch/jwatts/mucol/v2.11/condor/jobs/DDMarlinPandora_lib
+transfer_output_files = pion_250_1000_reco_$(Process).slcio
+output_directory      = /scratch/jwatts/mucol/v2.11/reco/pions_250_1000/
+WhenToTransferOutput  = ON_EXIT
+
+request_cpus   = 1
+request_memory = 8 GB
+request_disk   = 15 GB
+
+Queue 100
