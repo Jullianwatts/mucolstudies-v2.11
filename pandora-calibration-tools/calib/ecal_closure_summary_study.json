@@ -1,0 +1,76 @@
+{
+  "created_unix": 1782940363,
+  "ecal_closure_truth_over_corrected": {
+    "mean": 1.1351993151883368,
+    "median": 1.0039631571090346,
+    "n": 38741,
+    "stdev": 0.6415324106019371
+  },
+  "events_total_ecal": 40000,
+  "events_total_hcal": 52797,
+  "files_ecal": 4000,
+  "files_hcal": 800,
+  "hadronic_closure_truth_over_corrected": {
+    "mean": null,
+    "median": null,
+    "n": 0,
+    "stdev": null
+  },
+  "hcal_closure_target_over_corrected": {
+    "mean": 6.753847571226349,
+    "median": 1.6295203981643969,
+    "n": 46810,
+    "stdev": 43.430808403262986
+  },
+  "inputs": {
+    "cluster_collection": "PandoraClusters",
+    "ecal_calibration": "calib/ecal_theta_energy_calib_study.json",
+    "ecal_inputs": [
+      "/data/fmeloni/DataMuC_MAIA_v0/v6/reco/photonGun_E_0_50",
+      "/data/fmeloni/DataMuC_MAIA_v0/v6/reco/photonGun_E_50_250",
+      "/data/fmeloni/DataMuC_MAIA_v0/v6/reco/photonGun_E_250_1000",
+      "/data/fmeloni/DataMuC_MAIA_v0/v6/reco/photonGun_E_1000_5000"
+    ],
+    "ecal_pdg_ids": [
+      22
+    ],
+    "ecal_subdet_index": 0,
+    "energy_source": "clusters",
+    "hadronic_calibration": null,
+    "hcal_calibration": "calib/hadronic_theta_energy_calib4.json",
+    "hcal_inputs": [
+      "/scratch/jwatts/mucol/v2.11/reco_v2/pions_0_50",
+      "/scratch/jwatts/mucol/v2.11/reco_v2/pions_50_250",
+      "/scratch/jwatts/mucol/v2.11/reco_v2/pions_250_1000",
+      "/scratch/jwatts/mucol/v2.11/reco_v2/pions_1000_5000"
+    ],
+    "hcal_pdg_ids": [
+      2112,
+      211,
+      111
+    ],
+    "hcal_subdet_index": 1,
+    "skip_missing_subdet_split": true
+  },
+  "plot_outputs": {
+    "ecal": {
+      "count_map_png": "calib/plots/ecal_count_map.png",
+      "root": "calib/plots/ecal_calibration_plots.root",
+      "scale_map_png": "calib/plots/ecal_scale_map.png",
+      "theta_profiles_png": "calib/plots/ecal_theta_profiles.png"
+    },
+    "hcal": {
+      "count_map_png": "calib/plots/hadronic_count_map.png",
+      "root": "calib/plots/hadronic_calibration_plots.root",
+      "scale_map_png": "calib/plots/hadronic_scale_map.png",
+      "theta_profiles_png": "calib/plots/hadronic_theta_profiles.png"
+    }
+  },
+  "runtime_sec": 9164.399,
+  "total_closure_truth_over_corrected": {
+    "mean": 1.480602387793476,
+    "median": 1.2486500234663922,
+    "n": 47001,
+    "stdev": 1.3666130199627304
+  }
+}
