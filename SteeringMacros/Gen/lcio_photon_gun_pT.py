@@ -1,14 +1,3 @@
-#####################################
-#
-# simple script to create lcio files with single particle
-# events - modify as needed
-# @author F.Gaede, DESY
-# @date 1/07/2014
-#
-# initialize environment:
-#  export PYTHONPATH=${LCIO}/src/python:${ROOTSYS}/lib
-#
-#####################################
 import math
 import random
 from array import array
@@ -17,86 +6,81 @@ from array import array
 from pyLCIO import UTIL, EVENT, IMPL, IO, IOIMPL
 
 #---- number of events ----------------------
-nevt = 10000
-
-outfile = "photonGun_gen.slcio"
+nevt = 5000
 
 #--------------------------------------------
-
-
-wrt = IOIMPL.LCFactory.getInstance().createLCWriter( )
-
-wrt.open( outfile , EVENT.LCIO.WRITE_NEW ) 
-
-random.seed()
-
 
 #========== particle properties ===================
 
 # particles per event
 npart = 1
 
-genstat  = 1
+genstat = 1
 
-which_slice = 0
-pt_vec= [0.1, 50., 250., 1000., 5000.]
+which_slice = 3
+pt_vec = [0.1, 50., 250., 1000., 5000.]
+slice_labels = ["0_50", "50_250", "250_1000", "1000_5000"]
 
 pt_min = pt_vec[which_slice]
 pt_max = pt_vec[which_slice+1]
 
-theta_min = 8./180.*math.pi
-theta_max = 172./180.*math.pi
+theta_vec = [(0.5, 0.9), (2.1, 2.5)]
 
 pdg = 22
 
-mass =  0.
+mass = 0.
 charge = 0.
 
 decayLen = 1.e32
-
 beamspot_sigma = 1.5 #mm
+
+outfile = "photonGun_transitionRegion_" + slice_labels[which_slice] + "_gen.slcio"
 
 #=================================================
 
+wrt = IOIMPL.LCFactory.getInstance().createLCWriter()
+wrt.open(outfile, EVENT.LCIO.WRITE_NEW)
 
-for j in range( 0, nevt ):
+random.seed()
 
-    col = IMPL.LCCollectionVec( EVENT.LCIO.MCPARTICLE ) 
-    evt = IMPL.LCEventImpl() 
+for j in range(0, nevt):
 
-    evt.setEventNumber( j ) 
+    col = IMPL.LCCollectionVec(EVENT.LCIO.MCPARTICLE)
+    evt = IMPL.LCEventImpl()
 
-    evt.addCollection( col , "MCParticle" )
+    evt.setEventNumber(j)
 
-    print (j, "-----------------------------")
-    
-    for ipart in range( 0, npart ):
-    
-        pt = random.uniform(pt_min, pt_max)
-        theta = random.uniform(theta_min, theta_max) 
-        phi =  random.random() * math.pi * 2.
+    evt.addCollection(col, "MCParticle")
 
-        p = pt/math.sin( theta )
-        energy   = math.sqrt( mass*mass  + p * p ) 
-        
-        if energy > 5000:
-            continue
-        
-        px = pt * math.cos( phi )
-        py = pt * math.sin( phi )
-        pz = p * math.cos( theta )
+    print(j, "-----------------------------")
 
-        momentum  = array('f',[ px, py, pz ] )  
+    for ipart in range(0, npart):
 
-        
+        # resample until energy <= 5000 so no empty events get written
+        while True:
+            pt = random.uniform(pt_min, pt_max)
+            theta_min, theta_max = theta_vec[random.randint(0, 1)]
+            theta = random.uniform(theta_min, theta_max)
+            p = pt/math.sin(theta)
+            energy = math.sqrt(mass*mass + p*p)
+            if energy <= 5000:
+                break
+
+        phi = random.random() * math.pi * 2.
+
+        px = pt * math.cos(phi)
+        py = pt * math.sin(phi)
+        pz = p * math.cos(theta)
+
+        momentum = array('f', [px, py, pz])
+
         # --- endpoint
-        
-        epx = decayLen * math.cos( phi ) * math.sin( theta ) 
-        epy = decayLen * math.sin( phi ) * math.sin( theta )
-        epz = decayLen * math.cos( theta ) 
 
-        endpoint = array('d',[ epx, epy, epz ] )  
+        epx = decayLen * math.cos(phi) * math.sin(theta)
+        epy = decayLen * math.sin(phi) * math.sin(theta)
+        epz = decayLen * math.cos(theta)
 
+        endpoint = array('d', [epx, epy, epz])
 
         # --- production vertex
 
@@ -104,45 +88,33 @@ for j in range( 0, nevt ):
         vpy = 0.
         vpz = random.gauss(0., beamspot_sigma)
 
-        vertex = array('d',[ vpx, vpy, vpz ] )
+        vertex = array('d', [vpx, vpy, vpz])
 
         time = 0.
 
-
-        # --- particle charge
-        
-        if ipart % 2 == 1:
-            pdg = -pdg
-            charge = -charge
-        
-
-        
 #--------------- create MCParticle -------------------
-        
-        mcp = IMPL.MCParticleImpl() 
 
-        mcp.setGeneratorStatus( genstat ) 
-        mcp.setMass( mass )
-        mcp.setPDG( pdg ) 
-        mcp.setMomentum( momentum )
-        mcp.setCharge( charge ) 
-        mcp.setVertex( vertex )
-        mcp.setTime( time )
+        mcp = IMPL.MCParticleImpl()
 
-        if( decayLen < 1.e9 ) :   # arbitrary ...
-            mcp.setEndpoint( endpoint ) 
+        mcp.setGeneratorStatus(genstat)
+        mcp.setMass(mass)
+        mcp.setPDG(pdg)
+        mcp.setMomentum(momentum)
+        mcp.setCharge(charge)
+        mcp.setVertex(vertex)
+        mcp.setTime(time)
 
-        print ("  ", ipart, pdg, charge, pt, phi, theta)
-    
+        if(decayLen < 1.e9):   # arbitrary ...
+            mcp.setEndpoint(endpoint)
+
+        print("  ", ipart, pdg, charge, pt, phi, theta)
 
 #-------------------------------------------------------
 
+        col.addElement(mcp)
 
-        col.addElement( mcp )
+    wrt.writeEvent(evt)
 
-        
-    wrt.writeEvent( evt ) 
+print("Generated", pt_min, pt_max, "slice ->", outfile)
 
-print("Generated ", pt_min, pt_max, " slice")
-
-wrt.close() 
+wrt.close()
