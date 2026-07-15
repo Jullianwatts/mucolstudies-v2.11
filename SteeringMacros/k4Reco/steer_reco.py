@@ -33,8 +33,8 @@ parser.add_argument("--skipTrackerConing", action="store_true", default=False, h
 parser.add_argument("--inputFile", type=str, default="", help="Input file, if set ignores the automatic path lookup in `--data`")
 parser.add_argument("--outputFile", type=str, default="", help="Output file, if set ignores the automatic output path generation in `--data`")
 parser.add_argument("--useLocalThresholds", action="store_true", default=False, help="Read MyBIBUtils thresholds files from code directory, rather than from the container")
-parser.add_argument("--photonEMCalibPayload", type=str, default=None, help="JSON payload for Pandora EM theta-energy correction")
-parser.add_argument("--hadronicCalibPayload", type=str, default=None, help="JSON payload for Pandora HAD theta-energy correction")
+#parser.add_argument("--photonEMCalibPayload", type=str, default=None, help="JSON payload for Pandora EM theta-energy correction")
+#parser.add_argument("--hadronicCalibPayload", type=str, default=None, help="JSON payload for Pandora HAD theta-energy correction")
 the_args = parser.parse_args()
 
 Coned = "" if the_args.skipTrackerConing else "Coned"
@@ -50,7 +50,7 @@ parseConstants(CONSTANTS)
 read = LcioEvent()
 read.OutputLevel = INFO
 if the_args.inputFile == "":
-    read.Files = [f"/scratch/jwatts/mucol/v2.11/sim/pions_0_50/pion_0_50_{i}.slcio" for i in range(100)]
+    read.Files = [f"/scratch/jwatts/mucol/v2.11/sim/photonGun_transitionRegion_1000_5000_sim_0.slcio"]
 else:
     read.Files = [the_args.inputFile]
 algList.append(read)
@@ -66,7 +66,7 @@ MyAIDAProcessor = MarlinProcessorWrapper("MyAIDAProcessor")
 MyAIDAProcessor.OutputLevel = INFO
 MyAIDAProcessor.ProcessorType = "AIDAProcessor"
 MyAIDAProcessor.Parameters = {
-    "FileName": ["lctuple_pions_50_250_actsseededckf"],
+    "FileName": ["lctuple_photons_0_50_actsseededckf"],
     "FileType": ["root"]
 }
 
@@ -79,7 +79,7 @@ if not the_args.enableBIB:
         "DropCollectionNames": [],
         "FullSubsetCollections": [],
         "KeepCollectionNames": ["MCParticle_SiTracks", "MCParticle_SelectedTracks"],
-        "LCIOOutputFile": [the_args.outputFile if the_args.outputFile != "" else "/scratch/jwatts/mucol/v2.11/reco/pions_0_50/pions_0_50_reco.slcio"],
+        "LCIOOutputFile": [the_args.outputFile if the_args.outputFile != "" else "/scratch/jwatts/mucol/v2.11/reco/photonGun_transitionRegion_1000_5000_reco_0.slcio"],
         "LCIOWriteMode": ["WRITE_NEW"]
     }
 else:
@@ -124,7 +124,7 @@ else:
             "SiTracks", "SelectedTracks",
             "MCParticle_SiTracks", "MCParticle_SelectedTracks"
         ],
-        "LCIOOutputFile": [the_args.outputFile if the_args.outputFile != "" else "/scratch/jwatts/mucol/v2.11/reco/pions_0_50/pions_0_50_reco.slcio"],
+        "LCIOOutputFile": [the_args.outputFile if the_args.outputFile != "" else "/scratch/jwatts/mucol/v2.11/reco/photonGun_transitionRegion_1000_5000_reco_0.slcio"],
         "LCIOWriteMode": ["WRITE_NEW"]
     }
 
@@ -771,7 +771,7 @@ DDMarlinPandora.Parameters = {
     "LayersFromEdgeMaxRearDistance": ["250"],
     "MCParticleCollections": ["MCParticle"],
     "MaxBarrelTrackerInnerRDistance": ["200"],
-    "MaxClusterEnergyToApplySoftComp": ["2000."],
+    "MaxClusterEnergyToApplySoftComp": ["0."],
     "MaxHCalHitHadronicEnergy": ["1000000"],
     "MaxTrackHits": ["5000"],
     "MaxTrackSigmaPOverP": ["0.15"],
@@ -827,12 +827,12 @@ DDMarlinPandora.Parameters = {
     "ZCutForNonVertexTracks": ["250"]
 }
 
-if the_args.photonEMCalibPayload:
-    DDMarlinPandora.Parameters.update(load_ddmarlin_parameter_payload(the_args.photonEMCalibPayload))
-    print(f"Loaded photon EM calibration payload: {the_args.photonEMCalibPayload}")
-if the_args.hadronicCalibPayload:
-    DDMarlinPandora.Parameters.update(load_ddmarlin_parameter_payload(the_args.hadronicCalibPayload))
-    print(f"Loaded hadronic calibration payload: {the_args.hadronicCalibPayload}")
+#if the_args.photonEMCalibPayload:
+    #DDMarlinPandora.Parameters.update(load_ddmarlin_parameter_payload(the_args.photonEMCalibPayload))
+    #print(f"Loaded photon EM calibration payload: {the_args.photonEMCalibPayload}")
+#if the_args.hadronicCalibPayload:
+    #DDMarlinPandora.Parameters.update(load_ddmarlin_parameter_payload(the_args.hadronicCalibPayload))
+    #print(f"Loaded hadronic calibration payload: {the_args.hadronicCalibPayload}")
 
 FastJetProcessor = MarlinProcessorWrapper("FastJetProcessor")
 FastJetProcessor.OutputLevel = INFO
