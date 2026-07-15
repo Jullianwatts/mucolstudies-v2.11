@@ -6,9 +6,9 @@
     <ShouldDisplayAlgorithmInfo>false</ShouldDisplayAlgorithmInfo>
     <ShouldCollapseMCParticlesToPfoTarget>true</ShouldCollapseMCParticlesToPfoTarget>
 
-    <!-- PLUGIN REGISTRATION -->
+    <!-- PLUGIN REGISTRATION
     <HadronicEnergyCorrectionPlugins>HadronicThetaEnergyBinned</HadronicEnergyCorrectionPlugins>
-    <ElectromagneticEnergyCorrectionPlugins>PhotonEMNonLinearity</ElectromagneticEnergyCorrectionPlugins>
+    <ElectromagneticEnergyCorrectionPlugins>PhotonEMNonLinearity</ElectromagneticEnergyCorrectionPlugins> -->
     <EmShowerPlugin>LCEmShowerId</EmShowerPlugin>
     <PhotonPlugin>LCPhotonId</PhotonPlugin>
     <ElectronPlugin>LCElectronId</ElectronPlugin>
@@ -21,10 +21,32 @@
     </LCMuonId>
 
     <LCElectronId>
-        <!-- If true, the E/p check uses corrected electromagnetic cluster energy. -->
-        <UseCorrectedElectromagneticEnergyForEOverP>true</UseCorrectedElectromagneticEnergyForEOverP>
-    </LCElectronId>
+        <!--  If true, the E/p check uses corrected electromagnetic cluster energy. -->
+        <UseCorrectedElectromagneticEnergyForEOverP>false</UseCorrectedElectromagneticEnergyForEOverP>
 
+        <!-- Cluster innermost hit must be in pseudolayer <= this value -->
+        <!-- Default: 4 — may need to raise if solenoid pushes shower start deeper -->
+        <MaxInnerLayer>4</MaxInnerLayer>
+
+    <!-- Below this cluster energy (GeV), auto-ID as electron if profile discrepancy
+         passes ProfileDiscrepancyForAutoId, bypassing the E/p cut entirely -->
+        <MaxEnergy>5</MaxEnergy>
+
+    <!-- Auto-ID discrepancy threshold used when cluster E < MaxEnergy -->
+    <!-- Default: 0.5 -->
+        <ProfileDiscrepancyForAutoId>0.5</ProfileDiscrepancyForAutoId>
+
+    <!-- Shower start position must be < this value in X0 -->
+    <!-- Default: 4.5 — MAIA solenoid adds ~4 X0, may need to raise -->
+        <MaxProfileStart>4.5</MaxProfileStart>
+
+    <!-- Max longitudinal profile discrepancy (normalized L1 diff vs Gamma function) -->
+    <!-- Default: 0.6 -->
+        <MaxProfileDiscrepancy>0.6</MaxProfileDiscrepancy>
+
+    <!-- Max |E/p - 1| — THIS is likely your main problem -->
+        <MaxResidualEOverP>0.2</MaxResidualEOverP>
+    </LCElectronId>
     <!-- ALGORITHM SETTINGS -->
 
     <!-- Set calo hit properties, then select tracks and hits to use for clustering -->
@@ -108,7 +130,6 @@
                     <MaxCentroidDifference>50</MaxCentroidDifference>
                 </algorithm>
                 <algorithm type = "ShowerMipMerging">
-                    <!-- Brought down from default of 1000. -->
                     <MaxCentroidDifference>500</MaxCentroidDifference>
                 </algorithm>
                 <algorithm type = "ShowerMipMerging2"/>
@@ -117,10 +138,8 @@
                 </algorithm>
                 <algorithm type = "ConeBasedMerging">
                     <algorithm type = "TrackClusterAssociation"/>
-                    <!-- Corresponds to an angle of 0.1 radians. Much smaller than default of 0.9 (~0.45 rad). -->
                     <ConeCosineHalfAngle>0.995</ConeCosineHalfAngle>
-                    <!-- If true, track-cluster chi checks use corrected parent and merged-candidate hadronic energies. -->
-                    <UseCorrectedHadronicEnergyForTrackComparison>true</UseCorrectedHadronicEnergyForTrackComparison>
+                    <UseCorrectedHadronicEnergyForTrackComparison>false</UseCorrectedHadronicEnergyForTrackComparison>
                 </algorithm>
             </associationAlgorithms>
         </algorithm>
@@ -178,7 +197,6 @@
         <MergedCandidateListName>PfoCreation</MergedCandidateListName>
     </algorithm>
 
-    <!-- After testing without these, I see many clusters per event. So it seems important. -->
     <algorithm type = "PhotonSplitting"/>
     <algorithm type = "PhotonFragmentMerging"/>
 
