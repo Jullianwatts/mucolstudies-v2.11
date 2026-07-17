@@ -33,8 +33,8 @@ parser.add_argument("--skipTrackerConing", action="store_true", default=False, h
 parser.add_argument("--inputFile", type=str, default="", help="Input file, if set ignores the automatic path lookup in `--data`")
 parser.add_argument("--outputFile", type=str, default="", help="Output file, if set ignores the automatic output path generation in `--data`")
 parser.add_argument("--useLocalThresholds", action="store_true", default=False, help="Read MyBIBUtils thresholds files from code directory, rather than from the container")
-#parser.add_argument("--photonEMCalibPayload", type=str, default=None, help="JSON payload for Pandora EM theta-energy correction")
-#parser.add_argument("--hadronicCalibPayload", type=str, default=None, help="JSON payload for Pandora HAD theta-energy correction")
+parser.add_argument("--photonEMCalibPayload", type=str, default=None, help="JSON payload for Pandora EM theta-energy correction")
+parser.add_argument("--hadronicCalibPayload", type=str, default=None, help="JSON payload for Pandora HAD theta-energy correction")
 the_args = parser.parse_args()
 
 Coned = "" if the_args.skipTrackerConing else "Coned"
@@ -50,7 +50,7 @@ parseConstants(CONSTANTS)
 read = LcioEvent()
 read.OutputLevel = INFO
 if the_args.inputFile == "":
-    read.Files = [f"/scratch/jwatts/mucol/v2.11/sim/photonGun_transitionRegion_1000_5000_sim_0.slcio"]
+    read.Files = [f"${MUCOL_BASE}/sim/electronGun_pT_0_50/10kelectron0to50_sim.slcio"]
 else:
     read.Files = [the_args.inputFile]
 algList.append(read)
@@ -79,7 +79,7 @@ if not the_args.enableBIB:
         "DropCollectionNames": [],
         "FullSubsetCollections": [],
         "KeepCollectionNames": ["MCParticle_SiTracks", "MCParticle_SelectedTracks"],
-        "LCIOOutputFile": [the_args.outputFile if the_args.outputFile != "" else "/scratch/jwatts/mucol/v2.11/reco/photonGun_transitionRegion_1000_5000_reco_0.slcio"],
+        "LCIOOutputFile": [the_args.outputFile if the_args.outputFile != "" else "${MUCOL_BASE}/reco/electronGun_pT_0_50/electronGun_pT_0_50_reco_Final.slcio"],
         "LCIOWriteMode": ["WRITE_NEW"]
     }
 else:
@@ -124,7 +124,7 @@ else:
             "SiTracks", "SelectedTracks",
             "MCParticle_SiTracks", "MCParticle_SelectedTracks"
         ],
-        "LCIOOutputFile": [the_args.outputFile if the_args.outputFile != "" else "/scratch/jwatts/mucol/v2.11/reco/photonGun_transitionRegion_1000_5000_reco_0.slcio"],
+        "LCIOOutputFile": [the_args.outputFile if the_args.outputFile != "" else "${MUCOL_BASE}/reco/electronGun_pT_0_50/electronGun_pT_0_50_reco_Final.slcio"],
         "LCIOWriteMode": ["WRITE_NEW"]
     }
 
