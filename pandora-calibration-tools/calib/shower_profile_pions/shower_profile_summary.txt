@@ -1,0 +1,8 @@
+entries: 47781
+MaxProfileStart: 4.5
+MaxProfileDiscrepancy: 0.6
+ProfileDiscrepancyForAutoId: 0.5
+pass_start: 32076 (0.671313)
+pass_discrepancy: 25490 (0.533476)
+pass_both: 19007 (0.397794)
+auto_id_discrepancy: 17981 (0.376321)
