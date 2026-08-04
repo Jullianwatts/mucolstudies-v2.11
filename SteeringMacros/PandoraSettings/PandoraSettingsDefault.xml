@@ -6,9 +6,8 @@
     <ShouldDisplayAlgorithmInfo>false</ShouldDisplayAlgorithmInfo>
     <ShouldCollapseMCParticlesToPfoTarget>true</ShouldCollapseMCParticlesToPfoTarget>
 
-    <!-- PLUGIN REGISTRATION
     <HadronicEnergyCorrectionPlugins>HadronicThetaEnergyBinned</HadronicEnergyCorrectionPlugins>
-    <ElectromagneticEnergyCorrectionPlugins>PhotonEMNonLinearity</ElectromagneticEnergyCorrectionPlugins> -->
+    <ElectromagneticEnergyCorrectionPlugins>PhotonEMNonLinearity</ElectromagneticEnergyCorrectionPlugins>
     <EmShowerPlugin>LCEmShowerId</EmShowerPlugin>
     <PhotonPlugin>LCPhotonId</PhotonPlugin>
     <ElectronPlugin>LCElectronId</ElectronPlugin>
@@ -22,7 +21,7 @@
 
     <LCElectronId>
         <!--  If true, the E/p check uses corrected electromagnetic cluster energy. -->
-        <UseCorrectedElectromagneticEnergyForEOverP>false</UseCorrectedElectromagneticEnergyForEOverP>
+        <UseCorrectedElectromagneticEnergyForEOverP>true</UseCorrectedElectromagneticEnergyForEOverP>
 
         <!-- Cluster innermost hit must be in pseudolayer <= this value -->
         <!-- Default: 4 — may need to raise if solenoid pushes shower start deeper -->
@@ -44,7 +43,6 @@
     <!-- Default: 0.6 -->
         <MaxProfileDiscrepancy>0.6</MaxProfileDiscrepancy>
 
-    <!-- Max |E/p - 1| — THIS is likely your main problem -->
         <MaxResidualEOverP>0.2</MaxResidualEOverP>
     </LCElectronId>
     <!-- ALGORITHM SETTINGS -->
@@ -139,7 +137,7 @@
                 <algorithm type = "ConeBasedMerging">
                     <algorithm type = "TrackClusterAssociation"/>
                     <ConeCosineHalfAngle>0.995</ConeCosineHalfAngle>
-                    <UseCorrectedHadronicEnergyForTrackComparison>false</UseCorrectedHadronicEnergyForTrackComparison>
+                    <UseCorrectedHadronicEnergyForTrackComparison>true</UseCorrectedHadronicEnergyForTrackComparison>
                 </algorithm>
             </associationAlgorithms>
         </algorithm>
